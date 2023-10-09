@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="SMADA-1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-05 02:55:56 PM"/>
+        <attribute name="created" value="U01BREEtMTtDTElFTlQtMzM7MjAyMy0xMC0wNTswMjo0Njo0MCBQTTsyMzE5"/>
+        <attribute name="edited" value="U01BREEtMTtDTElFTlQtMzM7MjAyMy0xMC0wNTswMjo1NTo1NiBQTTsxOzI0MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <declare name="v" type="Integer" array="False" size=""/>
+            <declare name="srad" type="Real" array="False" size=""/>
+            <declare name="jarak" type="Real" array="False" size=""/>
+            <output expression="&quot;Menghitung Jarak Horizontal Terjauh&quot;" newline="True"/>
+            <output expression="&quot;Masukan nilai s&quot;" newline="True"/>
+            <input variable="s"/>
+            <output expression="&quot;Masukan nilai v&quot;" newline="True"/>
+            <input variable="v"/>
+            <assign variable="srad" expression="s*(3.14/180)"/>
+            <assign variable="jarak" expression="v*v*sin(2*srad)/10"/>
+            <output expression="jarak" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
